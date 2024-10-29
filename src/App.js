@@ -45,11 +45,11 @@ function App() {
         <CardHeader className="justify-between">
           <div className="flex gap-5">
             <Avatar isBordered radius="full" size="md" src="../../Logo.png" />
-            <div className="flex flex-col gap-1 items-start justify-center">
-              <h4 className="text-small font-semibold leading-none text-default-600">
+            <div className="flex flex-col items-start justify-center gap-1">
+              <h4 className="font-semibold leading-none text-small text-default-600">
                 Jr-Dev (Juan Esteban)
               </h4>
-              <h5 className="text-small tracking-tight text-default-400">
+              <h5 className="tracking-tight text-small text-default-400">
                 @Jr-Developer
               </h5>
             </div>
@@ -85,7 +85,7 @@ function App() {
         <br />
         <CardBody className="px-3 py-0 text-small text-default-400">
           <p>
-            Desarrollador Junior Full-Stack especializado en JavaScript, con
+            Desarrollador Full-Stack especializado en JavaScript, con
             experiencia tanto en el desarrollo del lado del cliente como del
             servidor. Capaz de crear aplicaciones web completas utilizando
             tecnologías como React.js para el frontend y Node.js para el
@@ -121,24 +121,25 @@ function App() {
                         isBordered
                         radius="full"
                         size="md"
-                        src="../../Logo.png"
+                        src="../../Develop-removebg-preview.png"
+                        style={{ objectFit: 'cover' }}
                       />
-                      <div className="flex flex-col gap-1 items-start justify-center">
-                        <h4 className="text-small font-semibold leading-none text-default-600">
+                      <div className="flex flex-col items-start justify-center gap-1">
+                        <h4 className="font-semibold leading-none text-small text-default-600">
                           Jr-Dev (Juan Esteban)
                         </h4>
-                        <h5 className="text-small tracking-tight text-default-400">
+                        <h5 className="tracking-tight text-small text-default-400">
                           @Jr-Developer
                         </h5>
                       </div>
                     </ModalHeader>
                     <ModalBody>
                       {
-                        <div className="w-full flex flex-col gap-4">
+                        <div className="flex flex-col w-full gap-4">
                           {variants.map((variant) => (
                             <div
                               key={variant}
-                              className="flex flex-col w-full flex-wrap md:flex-nowrap mb-6 md:mb-0 gap-4"
+                              className="flex flex-col flex-wrap w-full gap-4 mb-6 md:flex-nowrap md:mb-0"
                             >
                               <Input
                                 type="text"
